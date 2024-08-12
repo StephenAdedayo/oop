@@ -1,3 +1,5 @@
+// classes
+
 class Car{
    constructor(name, model, year){
     this.name = name,
@@ -7,8 +9,9 @@ class Car{
 
 
    displayInfo(){
-    return (`this is a ${this.name}, ${model} that was developed in ${this.year}`)
+    return (`this is a ${this.name}, ${this.model} that was developed in ${this.year}`)
    }
+
 
 
 
@@ -31,4 +34,18 @@ class User{
     }
 }
 
-const users = new User()
+// abstraction
+
+const myCar = new Car('Mercedez', 'GLE', 2024)
+const myCar2 = new Car('Tesla', 'X-6', 2024)
+const myUser = new User('Stephen', 'alu@gmail.com', 8143184639, 'StephenTrent')
+
+
+console.log(myCar);
+console.log(myCar2);
+console.log(myCar2.displayInfo());
+
+console.log(myUser);
+console.log(myUser.logOut());
+
+
